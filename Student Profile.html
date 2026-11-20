@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Student Activity Management Portal">
+    <title>Student Activity Management Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Activity Management Portal</h1>
+        <p>Explore Events and Activities</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome Students</h2>
+            <p>Explore university activities and participate in upcoming events.</p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Participate in coding competitions and technical activities.</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Date: 28 November 2026</p>
+                <p>Participate in different sports activities.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: 5 December 2026</p>
+                <p>Show your talent through music, dance and drama.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Important Information</h2>
+            <p>Registration is open for all university students.</p>
+        </aside>
+
+        <section id="register">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="roll">Roll Number:</label>
+                <input type="text" id="roll" name="roll" required>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>IT</option>
+                    <option>AI & ML</option>
+                </select>
+
+                <label for="year">Academic Year:</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                </select>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label><input type="checkbox" name="interest" value="technical"> Technical</label>
+                    <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="interest" value="cultural"> Cultural</label>
+                </fieldset>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: activities@university.edu</p>
+        <p>&copy; 2026 University Student Activity Portal</p>
+    </footer>
+
+</body>
+</html>
